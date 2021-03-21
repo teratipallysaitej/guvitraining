@@ -1,0 +1,20 @@
+There are 3 ways to implement copy by value to composite datatypes
+1.)use spread operator (...)\
+ex:
+for array
+let arr1 = [1,2,3,4]
+let arr2 = [...arr1]
+for obj
+let a = {
+    name:'sanders',
+    age:21
+}
+b ={
+    ...a
+}
+2.)use Object.assign() method
+for the same above example
+arr2 = Object.assign({},arr1);
+a = Object.assign({},b)
+3.)Use JSON.parse() and JSON.stringify()
+a = JSON.parse(JSON.stringify(b))
